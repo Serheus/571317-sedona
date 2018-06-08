@@ -5,23 +5,24 @@
     <title>Седона</title>
   </head>
   <body>
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-header-logo">
+    <header class="header">
+      <nav class="navigation">
+        <a class="header-logo">
           <img src="img/logo.png" alt="Логотип">
         </a>
         <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li><a href="#">Гостиницы</a></li>
+          <li><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
-    <main>
+    <main class="container">
       <h1 class="visually-hidden">Город Седона</h1>
 
       <section class="intro">
+        <h2 class="visually-hidden">Интро</h2>
         <img src="img/intro.png" alt="Интро">
       </section>
 
@@ -30,28 +31,28 @@
         <h3>Седона — небольшой городок в Аризоне, заслуживающий большего!</h3>
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
         <ul class="features-list">
-          <li>
+          <li class="features-item">
             <h3>Настоящий городок</h3>
             <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Там есть Мост дьявола</h3>
             <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Небольшая площадь</h3>
             <p>Все достопримечательности находятся очень близко</p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Красивая дорога</h3>
             <p>Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
           </li>
-          <li>
+          <li class="features-item">
             <h3>Мало туристов</h3>
             <p>Большинство едет в гранд каньон и толпится там</p>
           </li>
-          <li>
-            <ul class="features-other">
+          <li  class="features-item">
+            <ul class="features-others">
               <li>
                 <h3>Жильё</h3>
                 <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
@@ -75,30 +76,30 @@
           Укажите предполагаемые даты поездки, <br>и мы покажем вам лучшие предложения гостиниц в Седоне
         </p>
         <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-          <button class="button-show" type="button">Поиск гостиницы в Седоне</button>
+          <button class="search-form-btn" type="button">Поиск гостиницы в Седоне</button>
           <p class="search-item">
-            <label for="arrival-date">Дата заезда:</label>
-            <input id="arrival-date" type="text" name="date" value="" placeholder="24 апреля 2017">
-            <button class="button calendar-button"type="button">Календарь</button>
+            <label for="search-date-arrival">Дата заезда:</label>
+            <input id="search-date-arrival" type="text" name="date-arrival" placeholder="24 апреля 2017">
+            <button class="search-calendar-btn" type="button">Календарь</button>
           </p>
           <p class="search-item">
-            <label for="departure-date">Дата выезда:</label>
-            <input id="departure-date" type="text" name="date" value="" placeholder="7 июля 2017">
-            <button class="button calendar-button"type="button">Календарь</button>
+            <label for="search-date-departure">Дата выезда:</label>
+            <input id="search-date-departure" type="text" name="date-departure" placeholder="7 июля 2017">
+            <button class="search-calendar-btn" type="button">Календарь</button>
           </p>
           <p class="search-item">
-            <label for="quantity-adults">Взрослые:</label>
-            <button class="button quantity-button" type="button">-</button>
-            <input id="quantity-adults" type="text" name="quantity" value="2" readonly>
-            <button class="button quantity-button" type="button">+</button>
+            <label for="search-quantity-adults">Взрослые:</label>
+            <button class="search-quantity-btn" type="button">-</button>
+            <input id="search-quantity-adults" type="text" name="quantity-adults" value="2" readonly>
+            <button class="search-quantity-btn" type="button">+</button>
           </p>
           <p class="search-item">
-            <label for="quantity-children">Дети:</label>
-            <button class="button quantity-button" type="button">-</button>
-            <input id="quantity-children" type="text" name="quantity" value="0" readonly>
-            <button class="button quantity-button" type="button">+</button>
+            <label for="search-quantity-children">Дети:</label>
+            <button class="search-quantity-btn" type="button">-</button>
+            <input id="search-quantity-children" type="text" name="quantity-children" value="0" readonly>
+            <button class="search-quantity-btn" type="button">+</button>
           </p>
-          <button class="search-button" type="submit">Найти</button>
+          <button class="search-btn" type="submit">Найти</button>
         </form>
       </section>
 
@@ -107,12 +108,12 @@
         <img src="img/map.jpg" alt="город Седона на карте">
       </section>
 
-      <footer class="main-footer">
+      <footer class="footer">
         <p>#visitsedona</p>
         <ul footer-social>
-          <li><a class="social-button social-button-twitter" href="#">Твиттер</a></li>
-          <li><a class="social-button social-button-facebook" href="#">Фейсбук</a></li>
-          <li><a class="social-button social-button-youtube" href="#">Ютуб</a></li>
+          <li><a class="footer-social-btn" href="#">Твиттер</a></li>
+          <li><a class="footer-social-btn" href="#">Фейсбук</a></li>
+          <li><a class="footer-social-btn" href="#">Ютуб</a></li>
         </ul>
         <p class="footer-copyright">
           Website by
