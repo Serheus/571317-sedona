@@ -1,0 +1,340 @@
+body {
+  margin: 0;
+  padding: 0;
+
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 400;
+  color: rgb(0, 0, 0);
+  text-transform: uppercase;
+
+  background-color: rgb(242, 242, 242);
+}
+
+a {
+  text-decoration: none;
+}
+
+.nav {
+  background-color: rgb(255, 255, 255);
+}
+
+.site-nav {
+  list-style: none;
+}
+
+.site-nav a {
+  font-weight: 700;
+  color: rgb(0, 0, 0);
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  color: rgb(129, 179, 210);
+}
+
+.site-nav a:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.site-nav-current a {
+  color: rgb(118, 99, 87);
+}
+
+.features,
+.search {
+  text-align: center;
+
+  background-color: rgb(255, 255, 255);
+}
+
+.features h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.features-list,
+.features-others {
+  list-style: none;
+}
+
+.features-item {
+  line-height: 21px;
+}
+
+.features-item:nth-child(1),
+.features-item:nth-child(2) {
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(129, 179, 210);
+}
+
+.search h2 {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+}
+
+.search-info {
+  line-height: 24px;
+}
+
+.form-btn {
+  font-size: 21px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+
+  background-color: rgb(118, 99, 87);
+  border: none;
+}
+
+.form-btn:hover,
+.form-btn:focus {
+  background-color: rgb(96, 78, 67);
+}
+
+.form-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(80, 62, 51);
+}
+
+.search-item {
+  font-weight: 700;
+  text-align: justify;
+}
+
+.search-item input[type="text"] {
+  font: inherit;
+  text-transform: uppercase;
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(242, 242, 242);
+  border: none;
+}
+
+.search-item input:hover {
+  background-color: rgb(235, 235, 235);
+}
+
+.search-item input:focus {
+  background-color: transparent;
+  outline-color: rgb(229, 229, 229);
+}
+
+.calendar-btn,
+.quantity-btn {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: rgb(169, 169, 169);
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: none;
+}
+
+.quantity-btn:hover,
+.quantity-btn:focus {
+  color: rgb(0, 0, 0);
+}
+
+.quantity-btn:active {
+  color: rgb(129, 179, 210);
+}
+
+.search-btn {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+
+  background-color: rgb(129, 179, 210);
+  border: none;
+}
+
+.search-btn:hover,
+.search-btn:focus {
+  background-color: rgb(102, 158, 192)
+}
+
+.search-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(84, 150, 189)
+}
+
+.filters {
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+
+  background: rgb(122, 157, 191) url("img/filter-background.jpg") no-repeat center top;
+}
+
+.filters-list fieldset {
+  border: none;
+}
+
+.filters-list legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filters-list ul {
+  list-style: none;
+}
+
+.filters-btn {
+  font: inherit;
+  line-height: 21px;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+
+  background-color: transparent;
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.filters-btn:hover,
+.filters-btn:focus {
+  color: rgb(0, 0, 0);
+
+  background-color: rgb(255, 255, 255);
+}
+
+.catalog {
+  background-color: rgb(255, 255, 255);
+}
+
+.catalog h3 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.sorting-options {
+  font-size: 12px;
+  line-height: 18px;
+}
+
+.sorting-options ul {
+  list-style: none;
+}
+
+.sorting-options a {
+  color: rgba(0, 0, 0, 0.3);
+
+  border-bottom: 1px dotted rgb(129, 179, 210);
+}
+
+.sorting-options a:hover,
+.sorting-options a:focus {
+  color: rgb(129, 179, 210);
+}
+
+.sorting-options a:active {
+  color: rgb(0, 0, 0);
+
+  border: none;
+}
+
+.sorting-options .sorting-btn-active {
+  color: rgb(129, 179, 210);
+
+  border: none;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  line-height: 21px;
+}
+
+.item-title {
+  color: rgb(0, 0, 0);
+}
+
+.item-title:hover,
+.item-title:focus {
+  color: rgb(129, 179, 210);
+}
+
+.item-title:active {
+  color: rgba(0, 0, 0, 0.3);
+}
+
+.item-rating {
+  color: rgb(102, 102, 102);
+
+  background-color: rgb(242, 242, 242);
+}
+
+.item-info {
+  color: rgb(51, 51, 51);
+}
+
+.catalog-btn {
+  font-weight: 700;
+  color: rgb(255, 255, 255)
+}
+
+.catalog-btn:first-child {
+  background-color: rgb(129, 179, 210);
+}
+
+.catalog-btn:first-child:hover,
+.catalog-btn:first-child:focus {
+  background-color: rgb(102, 158, 192);
+}
+
+.catalog-btn:first-child:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(84, 150, 189);
+}
+
+.catalog-btn:last-child {
+  background-color: rgb(118, 99, 87);
+}
+
+.catalog-btn:last-child:hover,
+.catalog-btn:last-child:focus {
+  background-color: rgb(96, 78, 67);
+}
+
+.catalog-btn:last-child:focus:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(80, 62, 51);
+}
+
+.footer {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.footer p:first-child {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.footer-social {
+  list-style: none;
+}
+
+.social-btn {
+  background-color: rgb(129, 179, 210);
+}
+
+.social-btn:hover,
+.social-btn:focus {
+  background-color: rgb(102, 158, 192);
+}
+
+.social-btn:active {
+  color: rgba(255, 255, 255, 0.3);
+
+  background-color: rgb(84, 150, 189);
+}

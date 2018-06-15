@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>Гостиницы - Седона</title>
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
     <header class="header">
@@ -14,7 +17,7 @@
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
-          <li class="site-nav-current"><a href="#">Гостиницы</a></li>
+          <li class="site-nav-current"><a href="catalog.html">Гостиницы</a></li>
         </ul>
       </nav>
     </header>
@@ -98,20 +101,24 @@
           <div class="sorting-options">
             Сортировка:
             <ul>
-              <li><a class="sorting-btn sorting-btn-active" type="button">По цене</a></li>
-              <li><a class="sorting-btn" type="button">По типу</a></li>
-              <li><a class="sorting-btn" type="button">По рейтингу</a></li>
-              <li><a class="sorting-btn" type="button">По убыванию</a></li>
-              <li><a class="sorting-btn sorting-btn-active" type="button">По возростанию</a></li>
+              <li><a class="sorting-btn sorting-btn-active">По цене</a></li>
+              <li><a class="sorting-btn">По типу</a></li>
+              <li><a class="sorting-btn">По рейтингу</a></li>
+              <li><a class="sorting-btn">По убыванию</a></li>
+              <li><a class="sorting-btn sorting-btn-active">По возростанию</a></li>
             </ul>
           </div>
         </div>
         <ul class="catalog-list">
           <li class="catalog-item">
-            <h3>Amara Resort &#38; Spa</h3>
+            <a class="item-title" href="#">
+              <h3>Amara Resort &#38; Spa</h3>
+            </a>
             <span class="item-stars"></span>
             <p class="item-rating">Рейтинг: 8,5</p>
-            <img src="img/hotel-1.jpg" alt="Amara Resort &#38; Spa" width="135" height="90">
+            <a href="#">
+              <img src="img/hotel-1.jpg" alt="Amara Resort &#38; Spa" width="135" height="90">
+            </a>
             <table class="item-info">
               <tr>
                 <td>Гостиница</td>
@@ -124,10 +131,14 @@
             </p>
           </li>
           <li class="catalog-item">
-            <h3>Desert Quail Inn</h3>
+            <a class="item-title" href="#">
+              <h3>Desert Quail Inn</h3>
+            </a>
             <span class="item-stars"></span>
             <p class="item-rating">Рейтинг: 8,9</p>
-            <img src="img/hotel-2.jpg" alt="Desert Quail Inn" width="135" height="90">
+            <a href="">
+              <img src="img/hotel-2.jpg" alt="Desert Quail Inn" width="135" height="90">
+            </a>
             <table class="item-info">
               <tr>
                 <td>Мотель</td>
@@ -140,10 +151,14 @@
             </p>
           </li>
           <li class="catalog-item">
-            <h3>Villas at Poco Diablo</h3>
+            <a class="item-title" href="#">
+              <h3>Villas at Poco Diablo</h3>
+            </a>
             <span class="item-stars"></span>
             <p class="item-rating">Рейтинг: 9,2</p>
-            <img src="img/hotel-3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
+            <a>
+              <img src="img/hotel-3.jpg" alt="Villas at Poco Diablo" width="135" height="90">
+            </a>
             <table class="item-info">
               <tr>
                 <td>Апартаменты</td>
