@@ -16,6 +16,24 @@ a {
   text-decoration: none;
 }
 
+.visually-hidden:not(:focus):not(:active),
+input[type="checkbox"].visually-hidden,
+input[type="radio"].visually-hidden {
+  position: absolute;
+
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .nav {
   background-color: rgb(255, 255, 255);
 }
@@ -70,7 +88,7 @@ a {
   background-color: rgb(129, 179, 210);
 }
 
-.search h2 {
+.search-title {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
@@ -135,6 +153,20 @@ a {
   border: none;
 }
 
+.calendar-btn {
+  width: 21px;
+  height: 22px;
+}
+
+.calendar-btn:hover path,
+.calendar-btn:focus path {
+  fill: rgb(0, 0, 0);
+}
+
+.calendar-btn:active path {
+  fill: rgb(129, 179, 210);
+}
+
 .quantity-btn:hover,
 .quantity-btn:focus {
   color: rgb(0, 0, 0);
@@ -170,7 +202,7 @@ a {
   line-height: 21px;
   color: rgb(255, 255, 255);
 
-  background: rgb(122, 157, 191) url("img/filter-background.jpg") no-repeat center top;
+  background: rgb(122, 157, 191) url("../img/filter-background.jpg") no-repeat center top;
 }
 
 .filters-list fieldset {
@@ -186,6 +218,87 @@ a {
   list-style: none;
 }
 
+.price-controls {
+  position: relative;
+
+  font-size: 0;
+
+  border: 2px solid rgb(255, 255, 255);
+  border-radius: 2px;
+}
+
+.price-controls::after {
+  content: "";
+  position: absolute;
+
+  width: 2px;
+  height: 22px;
+
+  background: rgb(255, 255, 255);
+}
+
+.price-controls label {
+  display: inline-block;
+
+  font-size: 14px;
+  line-height: 21px;
+  vertical-align: top;
+
+  cursor: pointer;
+}
+
+.price-controls input {
+  color: inherit;
+  font: inherit;
+
+  background: none;
+  border: none;
+}
+
+.range-controls {
+  position: relative;
+}
+
+.range-controls .scale {
+  height: 2px;
+
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.range-controls .bar {
+  width: 80%;
+  height: 2px;
+
+  background: rgb(255, 255, 255);
+}
+
+.range-toggle {
+  position: absolute;
+  top: -9px;
+
+  width: 4px;
+  height: 4px;
+
+  background: rgb(171, 171, 171);
+  border: 8px solid rgb(255, 255, 255);
+  border-radius: 50%;
+  box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
+  cursor: pointer;
+}
+
+.range-toggle-min {
+  left: 0;
+}
+
+.range-toggle-max {
+  left: 80%;
+}
+
+.range-toggle:hover,
+.range-toggle:focus {
+  background: rgb(28, 79, 128);
+}
+
 .filters-btn {
   font: inherit;
   line-height: 21px;
@@ -195,6 +308,7 @@ a {
   background-color: transparent;
   border: 2px solid rgb(255, 255, 255);
   border-radius: 2px;
+  cursor: pointer;
 }
 
 .filters-btn:hover,
@@ -218,31 +332,45 @@ a {
   line-height: 18px;
 }
 
-.sorting-options ul {
+.sorting-list {
   list-style: none;
 }
 
-.sorting-options a {
+.sorting-list a {
   color: rgba(0, 0, 0, 0.3);
 
   border-bottom: 1px dotted rgb(129, 179, 210);
 }
 
-.sorting-options a:hover,
-.sorting-options a:focus {
+.sorting-list a:hover,
+.sorting-list a:focus {
   color: rgb(129, 179, 210);
 }
 
-.sorting-options a:active {
+.sorting-list a:active {
   color: rgb(0, 0, 0);
 
   border: none;
 }
 
-.sorting-options .sorting-btn-active {
+.sorting-list .sorting-btn-active {
   color: rgb(129, 179, 210);
 
   border: none;
+}
+
+.ascending-descending a {
+  border: none;
+}
+
+.sorting-btn path:hover,
+.sorting-btn path:focus {
+  fill: rgb(0, 0, 0);
+}
+
+.sorting-btn path:active,
+.sorting-btn-active path {
+  fill: rgb(129, 179, 210);
 }
 
 .catalog-list {
@@ -264,6 +392,25 @@ a {
 
 .item-title:active {
   color: rgba(0, 0, 0, 0.3);
+}
+
+.item-stars {
+  width: 18px;
+  height: 17px;
+  background-image: url("../img/star.svg");
+  background-repeat: repeat-x;
+}
+
+.item-stars.two-stars {
+  width: 36px;
+}
+
+.item-stars.three-stars {
+  width: 54px;
+}
+
+.item-stars.four-stars {
+  width: 72px;
 }
 
 .item-rating {
@@ -334,7 +481,18 @@ a {
 }
 
 .social-btn:active {
-  color: rgba(255, 255, 255, 0.3);
-
   background-color: rgb(84, 150, 189);
+}
+
+.social-btn:active path {
+  opacity: 0.3;
+}
+
+.footer-copyright:hover path,
+.footer-copyright:focus path {
+  fill: rgb(129, 179, 210);
+}
+
+.footer-copyright:active path {
+  fill: rgb(189, 187, 188);
 }
