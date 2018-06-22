@@ -9,21 +9,19 @@
   </head>
   <body>
     <header class="header">
-      <nav class="nav">
-        <a class="header-logo">
-          <img src="img/logo.png" alt="Логотип" width="138" height="70">
-        </a>
-        <div class="container">
-          <div class="site-nav-wraper">
-            <ul class="site-nav">
-              <li class="nav-item"><a href="#">Информация</a></li>
-              <li class="nav-item"><a href="#">Фото и видео</a></li>
-              <li class="nav-item"><a href="#">Карта штата</a></li>
-              <li class="nav-item"><a href="catalog.html">Гостиницы</a></li>
-            </ul>
-          </div>
-        </div>
-      </nav>
+      <div class="container">
+        <nav class="nav">
+          <a class="header-logo">
+            <img src="img/logo.png" alt="Логотип" width="138" height="70">
+          </a>
+          <ul class="site-nav">
+            <li class="nav-item"><a href="#">Информация</a></li>
+            <li class="nav-item"><a href="#">Фото и видео</a></li>
+            <li class="nav-item"><a href="#">Карта штата</a></li>
+            <li class="nav-item"><a href="catalog.html">Гостиницы</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
     <main class="container">
       <h1 class="visually-hidden">Город Седона</h1>
@@ -86,7 +84,7 @@
         <button class="form-btn" type="button">Поиск гостиницы в Седоне</button>
         <div class="form-wraper">
           <form class="search-form" action="https://echo.htmlacademy.ru" method="post">
-            <p class="search-item date">
+            <div class="search-item date">
               <label for="date-arrival">Дата заезда:</label>
               <input id="date-arrival" type="text" name="date-arrival" placeholder="24 апреля 2017">
               <button class="calendar-btn" type="button">
@@ -95,8 +93,8 @@
                   <path fill="#CACACA" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#CACACA"/>
                 </svg>
               </button>
-            </p>
-            <p class="search-item">
+            </div>
+            <div class="search-item">
               <label for="date-departure">Дата выезда:</label>
               <input id="date-departure" type="text" name="date-departure" placeholder="4 июля 2017">
               <button class="calendar-btn" type="button">
@@ -105,21 +103,21 @@
                   <path fill="#CACACA" d="M19.251 2.025h-2.845V.648c0-.381-.294-.689-.656-.689-.363 0-.656.308-.656.689v1.377h-3.938V.648c0-.381-.294-.689-.655-.689-.363 0-.657.308-.657.689v1.377H5.906V.648c0-.381-.294-.689-.656-.689-.363 0-.657.308-.657.689v1.377H1.75C.784 2.025 0 2.847 0 3.862v16.302C0 21.179.784 22 1.75 22h17.501c.966 0 1.749-.821 1.749-1.836V3.862c0-1.015-.783-1.837-1.749-1.837zm.437 18.139a.448.448 0 0 1-.437.459H1.75a.45.45 0 0 1-.438-.459V3.862a.45.45 0 0 1 .438-.459h2.844v1.378c0 .381.294.689.657.689.362 0 .656-.308.656-.689V3.403h3.938v1.378c0 .381.294.689.657.689.361 0 .655-.308.655-.689V3.403h3.938v1.378c0 .381.293.689.656.689.362 0 .656-.308.656-.689V3.403h2.845c.241 0 .437.206.437.459v16.302z"/><path d="M4.594 8.225h2.625v2.066H4.594zM4.594 11.668h2.625v2.067H4.594zM4.594 15.112h2.625v2.066H4.594zM9.188 15.112h2.625v2.066H9.188zM9.188 11.668h2.625v2.067H9.188zM9.188 8.225h2.625v2.066H9.188zM13.781 15.112h2.625v2.066h-2.625zM13.781 11.668h2.625v2.067h-2.625zM13.781 8.225h2.625v2.066h-2.625z" fill="#CACACA"/>
                 </svg>
               </button>
-            </p>
+            </div>
             <div class="item-wraper">
-              <p class="search-item">
+              <div class="search-item">
                 <label for="quantity-adults">Взрослые:</label>
                 <button class="quantity-btn minus" type="button"><span class="visually-hidden">Минус</span></button>
                 <input id="quantity-adults" type="text" name="quantity-adults" value="2" readonly>
                 <button class="quantity-btn plus" type="button"><span class="visually-hidden">Плюс</span><span class="plus-part"></span>
                 </button>
-              </p>
-              <p class="search-item">
+              </div>
+              <div class="search-item">
                 <label for="quantity-children">Дети:</label>
                 <button class="quantity-btn minus" type="button"><span class="visually-hidden">Минус</span></button>
                 <input id="quantity-children" type="text" name="quantity-children" value="0" readonly>
                 <button class="quantity-btn plus" type="button"><span class="visually-hidden">Плюс</span><span class="plus-part"></button>
-              </p>
+              </div>
             </div>
             <button class="search-btn" type="submit">Найти</button>
           </form>
