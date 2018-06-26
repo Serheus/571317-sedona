@@ -134,11 +134,14 @@ input[type="radio"].visually-hidden {
   line-height: 0;
 }
 
-.intro img,
-.map img {
+.intro,
+.features,
+.search,
+.map,
+.filters,
+.catalog {
   margin: 0 auto;
-
-  display: block;
+  width: 1200px;
 }
 
 .features,
@@ -514,7 +517,7 @@ input[type="radio"].visually-hidden {
 
 .calendar-btn {
   top: 8px;
-  right: 9px;
+  left: 428px;
 }
 
 .calendar-btn::before,
@@ -630,6 +633,7 @@ input[type="radio"].visually-hidden {
 
 .filters-list {
   margin-left: 72px;
+  margin-right: 71px;
 
   display: flex;
   flex-wrap: wrap;
@@ -728,11 +732,11 @@ input[type="radio"].visually-hidden {
   border-radius: 2px;
 }
 
-.price-controls::after {
+.price-controls::before {
   content: "";
   position: absolute;
-  top: 6px;
-  right: 156px;
+  top: 5px;
+  left: 50%;
   width: 2px;
   height: 22px;
 
@@ -813,9 +817,12 @@ input[type="radio"].visually-hidden {
 }
 
 .filters-btn {
+  margin: 0 auto;
   margin-top: 32px;
-  margin-left: 85px;
+  /*margin-left: 85px;*/
   padding: 6px 34px;
+
+  display: block;
 
   font: inherit;
   line-height: 21px;
@@ -845,13 +852,16 @@ input[type="radio"].visually-hidden {
 /*--------------Catalog-sorting---------------------*/
 
 .catalog-sorting {
+  margin: 0;
+  margin-right: 67px;
+  margin-left: 71px;
+
   display: flex;
   flex-wrap: wrap;
 }
 
 .catalog-sorting h3 {
-  margin: 30px;
-  margin-left: 71px;
+  margin: 30px 0;
   margin-right: 49px;
   font-size: 21px;
   font-weight: 700;
@@ -871,6 +881,14 @@ input[type="radio"].visually-hidden {
   margin-right: 39px;
 }
 
+.sorting-list-wraper {
+  width: 782px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
 .sorting-list {
   padding: 0;
 
@@ -884,6 +902,7 @@ input[type="radio"].visually-hidden {
   margin-right: 33px;
 }
 
+.sorting-list li:last-child,
 .sorting-list:nth-of-type(2) li {
   margin-right: 0;
 }
@@ -915,13 +934,12 @@ input[type="radio"].visually-hidden {
   border: none;
 }
 
-.sorting-list.ascending-descending {
+.sorting-list:nth-of-type(2) {
   margin-top: 6px;
-  margin-left: 465px;
   padding: 0px;
 }
 
-.ascending-descending a {
+.sorting-list:nth-of-type(2) a {
   padding: 6px;
 
   display: block;
