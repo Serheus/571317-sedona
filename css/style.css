@@ -51,10 +51,6 @@ input[type="radio"].visually-hidden {
 .nav {
   position: relative;
 
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-
   background-color: rgb(255, 255, 255);
 }
 
@@ -67,12 +63,12 @@ input[type="radio"].visually-hidden {
 }
 
 .site-nav {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
 
   display: flex;
   flex-wrap: wrap;
-  width: 1056px;
+  width: calc(100% - 72px*2);
 
   list-style: none;
 }
@@ -137,9 +133,10 @@ input[type="radio"].visually-hidden {
 .intro,
 .features,
 .search,
-.map,
 .filters,
-.catalog {
+.catalog,
+.map,
+.footer-main {
   margin: 0 auto;
   width: 1200px;
 }
@@ -695,28 +692,28 @@ input[type="radio"].visually-hidden {
 .filters-list {
   margin-left: 72px;
   margin-right: 71px;
+  width: auto;
 
   display: flex;
   flex-wrap: wrap;
+  justify-content: space-between;
 }
 
 .filters-list fieldset {
-  margin: 27px 0 7px;
+  margin: 0;
+  margin-top: 27px;
   padding: 0;
+  width: 255px;
 
   border: none;
 }
 
-.filters-list fieldset:nth-child(1) {
-  margin-right: 118px;
-}
-
-.filters-list fieldset:nth-child(2) {
-  margin-right: 350px;
+.filter-list-wraper {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .filters-list legend {
-  margin-top: 12px;
   margin-bottom: 24px;
 
   font-size: 16px;
@@ -733,6 +730,10 @@ input[type="radio"].visually-hidden {
 .filter-item {
   position: relative;
   margin-bottom: 24px;
+}
+
+.filter-item:last-child {
+  margin-bottom: 31px;
 }
 
 .filter-checkbox {
@@ -774,7 +775,7 @@ input[type="radio"].visually-hidden {
   opacity: 0.3;
 }
 
-.filter-range {
+.filter-list-wraper + .filter-range {
   width: 318px;
 }
 
@@ -933,6 +934,7 @@ input[type="radio"].visually-hidden {
 
   display: flex;
   flex-wrap: wrap;
+  flex-grow: 1;
 
   font-size: 12px;
   line-height: 15px;
@@ -943,11 +945,10 @@ input[type="radio"].visually-hidden {
 }
 
 .sorting-list-wraper {
-  width: 782px;
-
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+  flex-grow: 1;
 }
 
 .sorting-list {
@@ -1185,9 +1186,13 @@ input[type="radio"].visually-hidden {
 }
 
 /*--------------------Footer--------------------*/
-.footer-main {
+.footer {
   position: relative;
-  top: -120px;
+}
+
+.footer-main {
+  position: absolute;
+  bottom: 0;
   z-index: 3;
 }
 
