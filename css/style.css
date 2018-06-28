@@ -1021,7 +1021,7 @@ input[type="radio"].visually-hidden {
 .catalog-item {
   position: relative;
   padding-top: 25px;
-  padding-bottom: 24px;
+  padding-bottom: 30px;
   padding-left: 72px;
   padding-right: 73px;
 
@@ -1039,7 +1039,7 @@ input[type="radio"].visually-hidden {
 
 .item-pic {
   margin-top: 5px;
-  margin-right: 30px;
+  margin-right: 28px;
   width: 138px;
   height: 70px;
 }
@@ -1140,7 +1140,7 @@ input[type="radio"].visually-hidden {
 }
 
 .catalog-btn:first-child {
-  margin-right: 6px;
+  margin-right: 5px;
   background-color: rgb(129, 179, 210);
 }
 
