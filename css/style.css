@@ -730,7 +730,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-item:last-child {
-  margin-bottom: 31px;
+  margin-bottom: 29px;
 }
 
 .filter-checkbox {
@@ -743,7 +743,10 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-checkbox input[type="checkbox"] {
-  display: none;
+  position: absolute;
+  z-index: -1;
+
+  opacity: 0;
 }
 
 .filter-checkbox input[type="checkbox"] + .checkbox-indicator {
@@ -763,8 +766,7 @@ input[type="radio"].visually-hidden {
 }
 
 .filter-checkbox input[type="checkbox"]:focus + .checkbox-indicator {
-  outline: thin dotted;
-  outline: 5px auto -webkit-focus-ring-color;
+  outline: 2px dotted rgb(255, 255, 255);
 }
 
 .filter-checkbox input[type="checkbox"]:disabled + .checkbox-indicator,
@@ -974,6 +976,10 @@ input[type="radio"].visually-hidden {
 .sorting-list a:hover,
 .sorting-list a:focus {
   color: rgb(129, 179, 210);
+}
+
+.sorting-list a:focus {
+  outline: 1px dotted rgb(129, 179, 210);
 }
 
 .sorting-list a:active {
