@@ -1121,9 +1121,11 @@ input[type="radio"].visually-hidden {
 
 .item-pic {
   margin-top: 5px;
-  margin-right: 28px;
-  width: 138px;
-  height: 70px;
+  margin-right: 30px;
+  width: 135px;
+  height: 90px;
+
+  flex-shrink: 0;
 }
 
 .catalog-item-wraper {
@@ -1146,6 +1148,7 @@ input[type="radio"].visually-hidden {
 .item-title {
   margin: 0;
   margin-bottom: 7px;
+  width: 70%;
 
   display: block;
 
@@ -1154,8 +1157,6 @@ input[type="radio"].visually-hidden {
 
 .item-title h3 {
   margin: 0;
-  margin-right: 25px;
-
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -1220,7 +1221,7 @@ input[type="radio"].visually-hidden {
 .item-info p {
   margin: 0;
   padding: 0;
-  width: 115px;
+  width: 116px;
 }
 
 .catalog-btns {
@@ -1324,8 +1325,8 @@ input[type="radio"].visually-hidden {
   display: -ms-flexbox;
 
   display: flex;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;

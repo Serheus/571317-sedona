@@ -10,10 +10,10 @@ btnOpenClose.addEventListener("click", function(evt) {
 });
 
 searchForm.addEventListener("submit", function (evt) {
-    if (!dateArrival.value || !dateDeparture.value || !quantityAdults.value && !dateArrival.value) {
-      evt.preventDefault();
-      searchForm.classList.remove("search-form-error");
-      searchForm.offsetWidth = searchForm.offsetWidth;
-      searchForm.classList.add("search-form-error");
-    };
+  if (!dateArrival.value || !dateDeparture.value || !quantityAdults.value && !dateArrival.value) {
+    evt.preventDefault();
+    searchForm.classList.remove("search-form-error");
+    searchForm.offsetWidth = searchForm.offsetWidth;
+    searchForm.classList.add("search-form-error");
+  };
 });
